@@ -75,12 +75,3 @@ void fifoPageReplacement(int pages[], int n, int frames) {
     printf("\nTotal page faults: %d\n", page_faults);
 }
 
-
-
-
-
-
-FIFO (First-In-First-Out) is a page replacement algorithm used in operating systems to manage memory pages.
-It replaces the oldest page in memory when a new page needs to be loaded.
-FIFO uses a queue to keep track of the order in which pages were loaded into memory.
-It is simple to implement but may suffer from "Belady's Anomaly," where increasing the number of frames can increase the number of page faults.

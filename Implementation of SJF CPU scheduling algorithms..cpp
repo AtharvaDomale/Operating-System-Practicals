@@ -60,12 +60,3 @@ int main() {
     return 0;
 }
 
-
-
-
-
-SJF selects the process with the shortest burst time (execution time) for execution next.
-It can be preemptive, where the currently running process can be interrupted if a new process with a shorter burst time arrives.
-SJF minimizes average waiting time and turnaround time because it prioritizes shorter jobs.
-However, it can lead to starvation for longer processes if shorter processes keep arriving, causing them to wait indefinitely.
-SJF is suitable for environments where the burst time of processes is known in advance or can be predicted accurately.

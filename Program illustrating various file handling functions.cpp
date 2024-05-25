@@ -58,13 +58,3 @@ int main() {
     return 0;
 }
 
-
-
-
-File handling functions in C facilitate reading from and writing to files.
-fopen(): Opens a file with a specified mode (e.g., "r" for reading, "w" for writing).
-fclose(): Closes a file.
-fprintf(), fscanf(): Write and read formatted data from files.
-fputc(), fgetc(): Write and read characters from files.
-fgets(), fputs(): Read and write strings from/to files.
-File handling functions are essential for tasks such as reading configuration files, logging data, and storing information persistently.

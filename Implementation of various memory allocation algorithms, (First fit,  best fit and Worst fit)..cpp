@@ -110,10 +110,3 @@ void worstFit(Block blocks[], int m, Process processes[], int n) {
 
 
 
-
-
-Memory allocation algorithms are used in operating systems to allocate memory to processes efficiently.
-First Fit: Allocates memory to the first hole (free memory block) that is large enough to accommodate the process.
-Best Fit: Allocates memory to the smallest hole that is large enough to accommodate the process, minimizing wastage.
-Worst Fit: Allocates memory to the largest hole, leaving the largest remaining hole, which may reduce fragmentation.
-These algorithms are essential for managing memory resources effectively and minimizing fragmentation.

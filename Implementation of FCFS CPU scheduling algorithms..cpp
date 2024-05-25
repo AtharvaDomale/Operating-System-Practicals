@@ -52,22 +52,4 @@ int main() {
 
 
 
-FCFS is the simplest CPU scheduling algorithm, where processes are executed in the order they arrive in the ready queue.
-It works on the principle of "first come, first served", meaning the process that arrives first gets executed first.
-The CPU scheduler selects the process with the lowest arrival time from the ready queue and executes it until completion.
-FCFS is easy to understand and implement, but it may lead to high average waiting times, especially for long processes that arrive first.
-It is suitable for batch processing systems where turnaround time is not critical, and there is no need for interactive response times.
-
-
-
-
-
-
-
-
-
-
-
-
-
 

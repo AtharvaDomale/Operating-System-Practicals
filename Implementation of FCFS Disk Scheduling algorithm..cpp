@@ -42,12 +42,3 @@ void fcfsDiskScheduling(int requests[], int n, int head) {
 
 
 
-
-
-
-
-
-FCFS schedules disk requests in the order they arrive.
-It moves the disk arm to the requested track and services the request.
-FCFS is easy to implement but can lead to suboptimal performance, especially if requests are spread across the disk.
-It suffers from the "SSTF (Shortest Seek Time First) Starvation" problem, where requests that are far away from the disk head may have to wait indefinitely.

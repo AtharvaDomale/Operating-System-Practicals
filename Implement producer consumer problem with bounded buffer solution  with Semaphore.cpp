@@ -67,12 +67,3 @@ int main() {
 
     return 0;
 }
-
-
-
-
-he producer-consumer problem involves two types of threads: producers and consumers, which share a common, fixed-size buffer.
-Producers produce items and add them to the buffer, while consumers consume items from the buffer.
-The problem arises when producers try to produce items while the buffer is full or consumers try to consume items while the buffer is empty, leading to synchronization issues.
-Semaphores are used to control access to the buffer, ensuring mutual exclusion and synchronization between producers and consumers.
-Producers wait on a semaphore representing empty slots in the buffer before adding items, and consumers wait on a semaphore representing filled slots before consuming items.

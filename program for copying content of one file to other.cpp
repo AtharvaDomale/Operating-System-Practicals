@@ -36,11 +36,3 @@ int main() {
     return 0;
 }
 
-
-
-
-This task involves reading data from one file (the source file) and writing it to another file (the destination file).
-The source file is opened for reading, and the destination file is opened for writing.
-Data is read from the source file in chunks and written to the destination file until the end of the file (EOF) is reached.
-After copying is complete, both files are closed.
-This operation is useful for tasks such as backing up files, duplicating content, or transferring data between storage locations.
