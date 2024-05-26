@@ -1,0 +1,135 @@
+1. Installation of any OS
+2. Unix/Linux Basic Commands
+
+The `ls` command lists directory contents, with `ls -l` providing a detailed listing.  
+The `cd` command changes the current directory (`cd /path/to/dir` and `cd ..` to move up one level), while `pwd` prints the working directory.  
+To create a new directory, use `mkdir new_dir`, and to remove an empty directory, use `rmdir dir_name`.  
+The `rm` command removes files or directories (`rm file_name` and `rm -r dir_name` for recursive removal).  
+To copy files or directories, use `cp source_file dest_file` and `cp -r source_dir dest_dir`.  
+The `mv` command moves or renames files or directories (`mv old_name new_name`).  
+To create an empty file or update its timestamp, use `touch file_name`.  
+
+For file content manipulation, `cat` displays file content (`cat file_name`), while `more` and `less` view file content one page at a time (`more file_name` and `less file_name`).  
+The `head` command shows the first 10 lines of a file (`head file_name` and `head -n 20 file_name` for the first 20 lines), and `tail` shows the last 10 lines (`tail file_name` and `tail -n 20 file_name` for the last 20 lines).  
+
+System information commands include `uname -a` for displaying all system information, `df -h` for showing disk space usage in human-readable format, and `du -sh directory_name` for summarizing disk usage of a directory.
+
+
+3. FCFS CPU Scheduling Algorithm (First-Come, First-Served)
+The FCFS scheduling algorithm is one of the simplest forms of CPU scheduling techniques. In this method, the process that arrives first in the ready queue is allocated the CPU first. The processes are executed in the order they arrive without preemption.
+
+Characteristics:
+
+Non-preemptive: Once a process starts executing, it runs to completion.
+FIFO Queue: Uses a first-in, first-out queue for scheduling.
+Pros: Easy to implement and understand.
+Cons: Can lead to high waiting times, especially with long processes (convoy effect).
+Usage:
+
+Ideal for batch processing systems where processes are non-interactive.
+
+
+4. SJF CPU Scheduling Algorithm (Shortest Job First)
+The SJF scheduling algorithm selects the process with the shortest burst time for execution next. It can be either preemptive or non-preemptive.
+
+Characteristics:
+
+Non-preemptive: Runs the shortest process to completion.
+Preemptive (Shortest Remaining Time First): Can preempt a running process if a new process with a shorter burst time arrives.
+Pros: Minimizes average waiting time and turnaround time.
+Cons: Difficult to predict burst time and can cause starvation for longer processes.
+Usage:
+
+Suitable for environments where the burst time is known in advance or can be estimated.
+
+
+5. Producer-Consumer Problem with Semaphore
+The producer-consumer problem is a classic synchronization problem where two types of processes, producers and consumers, share a bounded buffer.
+
+Characteristics:
+
+Producer: Produces data and adds it to the buffer.
+Consumer: Consumes data from the buffer.
+Bounded Buffer: A fixed-size buffer shared between producers and consumers.
+Semaphores: Used for synchronization and to manage mutual exclusion.
+Solution with Semaphores:
+
+Mutex Semaphore: Ensures mutual exclusion when accessing the buffer.
+Empty Semaphore: Counts the number of empty slots in the buffer.
+Full Semaphore: Counts the number of filled slots in the buffer.
+Usage:
+
+Common in multi-threaded applications and scenarios requiring synchronization between concurrent processes.
+
+
+6. Various File Handling Functions
+File handling in C allows reading from and writing to files using a set of standard library functions.
+
+Functions:
+
+fopen(): Opens a file.
+fclose(): Closes a file.
+fprintf() / fscanf(): Writes/reads formatted data to/from a file.
+fputc() / fgetc(): Writes/reads a character to/from a file.
+fgets() / fputs(): Reads/writes a string from/to a file.
+Usage:
+
+Essential for tasks like logging, configuration management, and data storage in applications.
+
+
+7. Copying Content of One File to Another
+Copying a file involves reading data from a source file and writing it to a destination file.
+
+Steps:
+
+Open the source file for reading.
+Open the destination file for writing.
+Read data from the source file and write it to the destination file.
+Close both files after the operation.
+Usage:
+
+Useful for creating backups, duplicating files, and transferring data between different locations.
+
+
+8. Memory Allocation Algorithms (First Fit, Best Fit, Worst Fit)
+These algorithms manage the allocation of memory blocks to processes in an efficient manner.
+
+First Fit:
+
+Allocates the first available memory block that is large enough.
+Best Fit:
+
+Allocates the smallest memory block that is large enough to reduce wastage.
+Worst Fit:
+
+Allocates the largest available memory block to reduce fragmentation.
+Usage:
+
+Critical for optimizing memory usage and managing fragmentation in operating systems.
+
+
+9. FIFO Page Replacement Algorithm
+FIFO is a simple page replacement algorithm used in managing memory pages in virtual memory systems.
+
+Characteristics:
+
+Queue-based: Uses a queue to track the order of pages.
+Replacement: The oldest page in the queue is replaced when a new page needs to be loaded.
+Pros: Simple to implement.
+Cons: Can lead to Belady's Anomaly where more frames can cause more page faults.
+Usage:
+
+Suitable for basic page replacement in systems with simpler memory management needs.
+
+
+10. FCFS Disk Scheduling Algorithm (First-Come, First-Served)
+The FCFS disk scheduling algorithm processes disk I/O requests in the order they arrive.
+
+Characteristics:
+
+Sequential Processing: Processes requests in the order they arrive.
+Pros: Simple and fair.
+Cons: Can lead to long wait times for requests far from the current head position.
+Usage:
+
+Suitable for systems where simplicity is more important than performance optimization.
